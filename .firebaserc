@@ -1,5 +1,20 @@
 {
   "projects": {
     "default": "drypto-art"
+  },
+  "targets": {
+    "drypto-art": {
+      "hosting": {
+        "prod": [
+          "drypto-art"
+        ],
+        "rinkeby": [
+          "rinkeby-drypto-art"
+        ],
+        "ropsten": [
+          "ropsten-drypto-art"
+        ]
+      }
+    }
   }
 }
