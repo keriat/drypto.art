@@ -1,6 +1,6 @@
 <template>
   <!-- header begin -->
-  <header class="transparent scroll-dark">
+  <header class="header-light scroll-light">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -19,7 +19,7 @@
             </div>
             <div class="de-flex-col header-col-mid">
               <!-- mainmenu begin -->
-              <ul id="mainmenu">
+              <ul id="mainmenu" f>
                 <li>
                   <nuxt-link to="/">Home<span></span></nuxt-link>
                   <ul>
@@ -89,50 +89,50 @@
                 <li>
                   <nuxt-link to="/activity">Activity<span></span></nuxt-link>
                 </li>
-                <li>
-                  <nuxt-link to="#">Elements<span></span></nuxt-link>
-                  <ul>
-                    <li>
-                      <nuxt-link to="/icons-elegant">Elegant Icons</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/icons-etline">Etline Icons</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/icons-font-awesome">Font Awesome Icons</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/accordion">Accordion</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/alerts">Alerts</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/counters">Counters</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/modal">Modal</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/popover">Popover</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/pricing-table">Pricing Table</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/progress-bar">Progress Bar</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/tabs">Tabs</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/tooltips">Tooltips</nuxt-link>
-                    </li>
-                  </ul>
-                </li>
+<!--                <li>-->
+<!--                  <nuxt-link to="#">Elements<span></span></nuxt-link>-->
+<!--                  <ul>-->
+<!--                    <li>-->
+<!--                      <nuxt-link to="/icons-elegant">Elegant Icons</nuxt-link>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                      <nuxt-link to="/icons-etline">Etline Icons</nuxt-link>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                      <nuxt-link to="/icons-font-awesome">Font Awesome Icons</nuxt-link>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                      <nuxt-link to="/accordion">Accordion</nuxt-link>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                      <nuxt-link to="/alerts">Alerts</nuxt-link>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                      <nuxt-link to="/counters">Counters</nuxt-link>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                      <nuxt-link to="/modal">Modal</nuxt-link>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                      <nuxt-link to="/popover">Popover</nuxt-link>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                      <nuxt-link to="/pricing-table">Pricing Table</nuxt-link>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                      <nuxt-link to="/progress-bar">Progress Bar</nuxt-link>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                      <nuxt-link to="/tabs">Tabs</nuxt-link>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                      <nuxt-link to="/tooltips">Tooltips</nuxt-link>-->
+<!--                    </li>-->
+<!--                  </ul>-->
+<!--                </li>-->
               </ul>
               <div class="menu_side_area">
-                <nuxt-link to="/login" class="btn-main">Connect Wallet</nuxt-link>
+                <nuxt-link to="/login" class="btn-main">Start using Drypto</nuxt-link>
                 <span id="menu-btn"></span>
               </div>
             </div>

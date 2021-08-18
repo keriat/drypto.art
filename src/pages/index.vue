@@ -1,7 +1,7 @@
 <template>
   <div class="no-bottom no-top" id="content">
     <div id="top"></div>
-    <section id="section-hero" aria-label="section" class="no-top no-bottom" data-bgimage="url('/images/background/bg-shape-1-dark.jpg') bottom">
+    <section id="section-hero" aria-label="section" class="no-top no-bottom" data-bgimage="url('/images/background/bg-shape-1.jpg') bottom">
       <div class="v-center">
         <div class="container">
           <div class="row align-items-center">

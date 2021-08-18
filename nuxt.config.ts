@@ -152,6 +152,9 @@ const config: NuxtConfig = {
       },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon-dark.png" }],
+    script: [
+      {src: "//code.jquery.com/jquery-3.5.1.min.js"},
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -163,7 +166,9 @@ const config: NuxtConfig = {
   /*
    ** Global CSS
    */
-  css: ["@/assets/style/main.scss"],
+  css: [
+    "@/assets/style/main.scss"
+  ],
 //
 //    <!--    <script src = "js/easing.js" > </script>-->
 //    <!--    <script src = "js/owl.carousel.js" > </script>-->
@@ -172,26 +177,13 @@ const config: NuxtConfig = {
 //    <!--    <script src = "js/jquery.plugin.js" > </script>-->
 //    <!--    <script src = "js/jquery.countTo.js" > </script>-->
 //    <!--    <script src = "js/jquery.countdown.js" > </script>-->
-  js: [
-    "https://code.jquery.com/jquery-3.6.0.min.js",
-//    "//cdn.jsdelivr.net/gh/dkern/jquery.lazy@1.7.10/jquery.lazy.min.js",
-//    "//cdn.jsdelivr.net/gh/dkern/jquery.lazy@1.7.10/jquery.lazy.plugins.min.js",
-//    "~bootstrap/dist/js/bootstrap.bundle.min.js",
-//    "~magnific-popup/dist/jquery.magnific-popup.min.js",
-//    "~isotope-layout/dist/isotope.pkgd.min.js",
-//    "@/assets/js/easing.js",
-//    "~owl.carousel/dist/owl.carousel.min.js",
-//    "@/assets/js/validation.js",
-//    "@/assets/js/jquery.plugin.js",
-//    "@/assets/js/jquery.countTo.js",
-//    "@/assets/js/jquery.countdown.js",
-//    "@/assets/js/enquire.min.js",
-//    "@/assets/js/designesia.js"
-  ],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["@/plugins/icons", "@/plugins/main"],
+  plugins: [
+    "@/plugins/icons",
+    "@/plugins/main",
+  ],
 
   router: {
     middleware: ["magicauth"],
@@ -229,7 +221,7 @@ const config: NuxtConfig = {
   /*
    ** Nuxt.js modules
    */
-  modules: ["@nuxtjs/dotenv", "@nuxt/http","@nuxtjs/axios", "@nuxtjs/toast", "@nuxtjs/google-gtag"],
+  modules: ["@nuxtjs/dotenv", "@nuxt/http","@nuxtjs/axios", "@nuxtjs/toast",],
   toast: <ToastOptions>{
     singleton: true,
     keepOnHover: true,
@@ -246,30 +238,8 @@ const config: NuxtConfig = {
       },
     },
   },
-  inkline: {
-    config: {
-      autodetectVariant: true,
-    },
-  },
   styleResources: {
     scss: ["@/assets/style/vars/*.scss"],
-  },
-  sentry: {
-    dsn: process.env.SENTRY_DSN,
-    disableServerSide: true,
-    config: {
-      tracesSampleRate: 1.0,
-      environment: env === "prod" ? "production" : env === "dev" ? "development" : env,
-    },
-  },
-  "google-gtag": {
-    id: process.env.GTAG_ID,
-    config: {
-      anonymize_ip: true, // anonymize IP
-      send_page_view: true, // might be necessary to avoid duplicated page track on page reload
-    },
-    debug: env !== "prod", // enable to track in dev mode
-    disableAutoPageTrack: false, // disable if you don't want to track each page route with router.afterEach(...).
   },
   /*
    ** Build configuration

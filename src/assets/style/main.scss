@@ -8,6 +8,16 @@
 
 
 /* import custom fonts */
+@import "./inc/bootstrap.min";
+@import "./inc/bootstrap-grid.min";
+@import "./inc/bootstrap-reboot.min";
+@import "./inc/animate";
+@import "./inc/owl";
+@import "./inc/owl.theme.css";
+@import "./inc/owl.transitions.css";
+@import "./inc/magnific-popup";
+@import "./inc/jquery.countdown";
+@import "./inc/coloring";
 
 
 /* ================================================== */
@@ -22,10 +32,10 @@
 
 /* ================================================== */
 
-@import url("../fonts/font-awesome/css/font-awesome.css");
-@import url("../fonts/elegant_font/HTML_CSS/style.css");
-@import url("../fonts/et-line-font/style.css");
-@import url("../fonts/icofont/icofont.min.css");
+@import "../fonts/font-awesome/css/font-awesome.css";
+@import "../fonts/elegant_font/HTML_CSS/style.css";
+@import "../fonts/et-line-font/style.css";
+@import "../fonts/icofont/icofont.min.css";
 
 * {
   --body-font: "DM Sans", Helvetica, Arial, sans-serif;
@@ -42,5 +52,5 @@
 
 @import "./general";
 @import "./plugins/de-grey";
-@import "./vars/themes/scheme-04";
+@import "./inc/themes/scheme-04";
 @import "./plugins/coloring";

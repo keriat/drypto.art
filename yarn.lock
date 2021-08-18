@@ -3668,6 +3668,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@popperjs/core@npm:^2.9.3":
+  version: 2.9.3
+  resolution: "@popperjs/core@npm:2.9.3"
+  checksum: 4cb94c271eaa13416ab8169c6af778c5b6160614351a79c68e8219d6ee0a40b8f71080ca29e139591c7c0c8e08fc1627d0e18d40a64609713a42b58d683a009d
+  languageName: node
+  linkType: hard
+
 "@sentry/browser@npm:^6.2.2":
   version: 6.4.1
   resolution: "@sentry/browser@npm:6.4.1"
@@ -5646,7 +5653,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"anymatch@npm:^3.0.0, anymatch@npm:^3.0.3, anymatch@npm:~3.1.1":
+"anymatch@npm:^3.0.0, anymatch@npm:^3.0.3, anymatch@npm:~3.1.1, anymatch@npm:~3.1.2":
   version: 3.1.2
   resolution: "anymatch@npm:3.1.2"
   dependencies:
@@ -6999,6 +7006,25 @@ __metadata:
     fsevents:
       optional: true
   checksum: b7774e6e3aeca084d39e8542041555a11452414c744122436101243f89580fad97154ae11525e46bfa816313ae32533e2a88e8587e4d50b14ea716a9e6538978
+  languageName: node
+  linkType: hard
+
+"chokidar@npm:>=3.0.0 <4.0.0":
+  version: 3.5.2
+  resolution: "chokidar@npm:3.5.2"
+  dependencies:
+    anymatch: ~3.1.2
+    braces: ~3.0.2
+    fsevents: ~2.3.2
+    glob-parent: ~5.1.2
+    is-binary-path: ~2.1.0
+    is-glob: ~4.0.1
+    normalize-path: ~3.0.0
+    readdirp: ~3.6.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  checksum: d1fda32fcd67d9f6170a8468ad2630a3c6194949c9db3f6a91b16478c328b2800f433fb5d2592511b6cb145a47c013ea1cce60b432b1a001ae3ee978a8bffc2d
   languageName: node
   linkType: hard
 
@@ -8496,6 +8522,15 @@ __metadata:
   version: 5.0.0
   resolution: "detect-indent@npm:5.0.0"
   checksum: 61763211daa498e00eec073aba95d544ae5baed19286a0a655697fa4fffc9f4539c8376e2c7df8fa11d6f8eaa16c1e6a689f403ac41ee78a060278cdadefe2ff
+  languageName: node
+  linkType: hard
+
+"detect-libc@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "detect-libc@npm:1.0.3"
+  bin:
+    detect-libc: ./bin/detect-libc.js
+  checksum: daaaed925ffa7889bd91d56e9624e6c8033911bb60f3a50a74a87500680652969dbaab9526d1e200a4c94acf80fc862a22131841145a0a8482d60a99c24f4a3e
   languageName: node
   linkType: hard
 
@@ -9999,6 +10034,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fibers@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "fibers@npm:5.0.0"
+  dependencies:
+    detect-libc: ^1.0.3
+  checksum: 7ac0b4c2faeb31413c2ac4bec48d06ab8d4ea2294c527a16f5e880ab742c05f2703788e3b728b29676f6d7dda0efb2742fa90c6dd7c269df9c4e6dd0d0beda0c
+  languageName: node
+  linkType: hard
+
 "figgy-pudding@npm:^3.5.1":
   version: 3.5.2
   resolution: "figgy-pudding@npm:3.5.2"
@@ -10181,6 +10225,13 @@ __metadata:
   bin:
     flat: cli.js
   checksum: 12a1536ac746db74881316a181499a78ef953632ddd28050b7a3a43c62ef5462e3357c8c29d76072bb635f147f7a9a1f0c02efef6b4be28f8db62ceb3d5c7f5d
+  languageName: node
+  linkType: hard
+
+"flatted@npm:^3.0.5":
+  version: 3.2.2
+  resolution: "flatted@npm:3.2.2"
+  checksum: 9d5e03fd9309b9103f345cf6d0cef4fa46201baa053b0ca3d57fa489449b0bee687b7355407898f630afbb1a1286d2a6658e7e77dea3b85c3cd6c6ce2894a5c3
   languageName: node
   linkType: hard
 
@@ -10426,7 +10477,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"fsevents@^2.1.2, fsevents@^2.3.2, fsevents@~2.3.1":
+"fsevents@^2.1.2, fsevents@^2.3.2, fsevents@~2.3.1, fsevents@~2.3.2":
   version: 2.3.2
   resolution: "fsevents@npm:2.3.2"
   dependencies:
@@ -10445,7 +10496,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@^2.1.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@^2.3.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.1#~builtin<compat/fsevents>":
+"fsevents@patch:fsevents@^2.1.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@^2.3.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.1#~builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
   resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=1cc4b2"
   dependencies:
@@ -10692,7 +10743,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"glob-parent@npm:^5.0.0, glob-parent@npm:^5.1.0, glob-parent@npm:~5.1.0":
+"glob-parent@npm:^5.0.0, glob-parent@npm:^5.1.0, glob-parent@npm:~5.1.0, glob-parent@npm:~5.1.2":
   version: 5.1.2
   resolution: "glob-parent@npm:5.1.2"
   dependencies:
@@ -17351,6 +17402,15 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"readdirp@npm:~3.6.0":
+  version: 3.6.0
+  resolution: "readdirp@npm:3.6.0"
+  dependencies:
+    picomatch: ^2.2.1
+  checksum: 1ced032e6e45670b6d7352d71d21ce7edf7b9b928494dcaba6f11fba63180d9da6cd7061ebc34175ffda6ff529f481818c962952004d273178acd70f7059b320
+  languageName: node
+  linkType: hard
+
 "redent@npm:^1.0.0":
   version: 1.0.0
   resolution: "redent@npm:1.0.0"
@@ -17850,6 +17910,7 @@ fsevents@^1.2.7:
     "@nuxtjs/sentry": latest
     "@nuxtjs/style-resources": latest
     "@nuxtjs/toast": latest
+    "@popperjs/core": ^2.9.3
     "@sentry/webpack-plugin": ^1.14.0
     "@types/jest": ^26.0.23
     "@typescript-eslint/eslint-plugin": ^4.21.0
@@ -17867,6 +17928,7 @@ fsevents@^1.2.7:
     eslint-plugin-vue: ^7.7.0
     ethereum-blockies-base64: latest
     ethers: ^5.4.4
+    fibers: ^5.0.0
     fork-ts-checker-webpack-plugin: ^6.1.0
     fs-extra: ^9.1.0
     fsevents: ^2.3.2
@@ -17888,7 +17950,8 @@ fsevents@^1.2.7:
     owl.carousel: ^2.3.4
     prettier: ^2.2.1
     qrcode: ^1.0.0
-    sass-loader: ^10.1.1
+    sass: ^1.38.0
+    sass-loader: 10
     stylelint: latest
     stylelint-config-standard: latest
     stylelint-scss: latest
@@ -17901,6 +17964,7 @@ fsevents@^1.2.7:
     vue-router: ^3.5.1
     vue-scrollto: ^2.20.0
     vuex: ^3.6.2
+    vuex-persist: ^3.1.3
     web3: ^1.5.1
     web3-core: ^1.5.1
     web3modal: ^1.9.4
@@ -18035,6 +18099,31 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"sass-loader@npm:10":
+  version: 10.2.0
+  resolution: "sass-loader@npm:10.2.0"
+  dependencies:
+    klona: ^2.0.4
+    loader-utils: ^2.0.0
+    neo-async: ^2.6.2
+    schema-utils: ^3.0.0
+    semver: ^7.3.2
+  peerDependencies:
+    fibers: ">= 3.1.0"
+    node-sass: ^4.0.0 || ^5.0.0 || ^6.0.0
+    sass: ^1.3.0
+    webpack: ^4.36.0 || ^5.0.0
+  peerDependenciesMeta:
+    fibers:
+      optional: true
+    node-sass:
+      optional: true
+    sass:
+      optional: true
+  checksum: d53212e5d199cdd221a67046ab4276c352d56b50ca64347115b36e8ebbb2c68ec396a14d6cf5a08853c830a6b0ec1fd2b016cdc53cbe90a0332a908f50ec2043
+  languageName: node
+  linkType: hard
+
 "sass-loader@npm:10.1.1":
   version: 10.1.1
   resolution: "sass-loader@npm:10.1.1"
@@ -18060,31 +18149,6 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"sass-loader@npm:^10.1.1":
-  version: 10.2.0
-  resolution: "sass-loader@npm:10.2.0"
-  dependencies:
-    klona: ^2.0.4
-    loader-utils: ^2.0.0
-    neo-async: ^2.6.2
-    schema-utils: ^3.0.0
-    semver: ^7.3.2
-  peerDependencies:
-    fibers: ">= 3.1.0"
-    node-sass: ^4.0.0 || ^5.0.0 || ^6.0.0
-    sass: ^1.3.0
-    webpack: ^4.36.0 || ^5.0.0
-  peerDependenciesMeta:
-    fibers:
-      optional: true
-    node-sass:
-      optional: true
-    sass:
-      optional: true
-  checksum: d53212e5d199cdd221a67046ab4276c352d56b50ca64347115b36e8ebbb2c68ec396a14d6cf5a08853c830a6b0ec1fd2b016cdc53cbe90a0332a908f50ec2043
-  languageName: node
-  linkType: hard
-
 "sass-resources-loader@npm:^2.0.0":
   version: 2.2.1
   resolution: "sass-resources-loader@npm:2.2.1"
@@ -18094,6 +18158,17 @@ fsevents@^1.2.7:
     glob: ^7.1.6
     loader-utils: ^2.0.0
   checksum: ff328e8d00397770d926d0581b5cf350179dd4546edbc2ddc864c700a4d22c01d9b58b5450629ae23db37488fb99f2860e889bfcf6e93543d7a75999d7aa67fe
+  languageName: node
+  linkType: hard
+
+"sass@npm:^1.38.0":
+  version: 1.38.0
+  resolution: "sass@npm:1.38.0"
+  dependencies:
+    chokidar: ">=3.0.0 <4.0.0"
+  bin:
+    sass: sass.js
+  checksum: 2a7140084785ab86a7577b8b1568a2fe9091716e02eacb071e37b32d3b5947d4b433ffc0361494ddeefcd0d8b2d44a87ee43b23630995250a7160261b1307e43
   languageName: node
   linkType: hard
 
@@ -20811,6 +20886,18 @@ typescript@^3.5.1:
   version: 2.6.12
   resolution: "vue@npm:2.6.12"
   checksum: a8959e30990c5464131e451d3f9c2a6e6964c2d1137a30fbcd2bc66174a6c2d6f63e4dcec9c17fa0f236580953ff1ad44c25437c5e02ee1cf74b588bbac1a0bf
+  languageName: node
+  linkType: hard
+
+"vuex-persist@npm:^3.1.3":
+  version: 3.1.3
+  resolution: "vuex-persist@npm:3.1.3"
+  dependencies:
+    deepmerge: ^4.2.2
+    flatted: ^3.0.5
+  peerDependencies:
+    vuex: ">=2.5"
+  checksum: 7cd8348c114da5e7ad1ff4a310782e9c7838b5937e033fe613b3f32c3afad61a9af2109caa8e5722731e64b7e5b9dff65cd0c5297289e3800e729236eb170fdd
   languageName: node
   linkType: hard
 

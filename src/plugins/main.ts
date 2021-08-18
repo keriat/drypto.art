@@ -1,5 +1,3 @@
-//require("owl.carousel");
-
 import utils from "@/plugins/utils";
 import { BigNumber } from "ethers";
 

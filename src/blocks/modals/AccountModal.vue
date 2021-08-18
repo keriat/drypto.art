@@ -27,7 +27,7 @@
         </div>
         <div class="modalFooterBtn" @click="logout()">
           <v-icon name="ri-link-unlink-m" />
-          <span>Disconnect wallet</span>
+          <span>Logout</span>
         </div>
       </template>
     </i-modal>

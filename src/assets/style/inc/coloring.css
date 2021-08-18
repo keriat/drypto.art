@@ -277,22 +277,32 @@ header.header-gradient,
 }
 
 .overlay-gradient {
+    background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.9) 0%, rgba(var(--primary-color-2-rgb), 0.9) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.9) 0%, rgba(var(--primary-color-2-rgb), 0.9) 100%);
     background: linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.9) 0%, rgba(var(--primary-color-2-rgb), 0.9) 100%);
 }
 
 .overlay-gradient.t80 {
+    background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.8) 0%, rgba(var(--primary-color-2-rgb), 0.8) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.8) 0%, rgba(var(--primary-color-2-rgb), 0.8) 100%);
     background: linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.8) 0%, rgba(var(--primary-color-2-rgb), 0.8) 100%);
 }
 
 .overlay-gradient.t70 {
+    background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.7) 0%, rgba(var(--primary-color-2-rgb), 0.7) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.7) 0%, rgba(var(--primary-color-2-rgb), 0.7) 100%);
     background: linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.7) 0%, rgba(var(--primary-color-2-rgb), 0.7) 100%);
 }
 
 .overlay-gradient.t60 {
+    background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.6) 0%, rgba(var(--primary-color-2-rgb), 0.6) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.6) 0%, rgba(var(--primary-color-2-rgb), 0.6) 100%);
     background: linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.6) 0%, rgba(var(--primary-color-2-rgb), 0.6) 100%);
 }
 
 .overlay-gradient.t50 {
+    background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.5) 0%, rgba(var(--primary-color-2-rgb), 0.5) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.5) 0%, rgba(var(--primary-color-2-rgb), 0.5) 100%);
     background: linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.5) 0%, rgba(var(--primary-color-2-rgb), 0.5) 100%);
 }
 
@@ -327,7 +337,9 @@ a.btn-border.btn-invert,
 }
 
 .author_list_pp:hover img{
-    box-shadow: 0 0 0 2px rgba(var(--secondary-color-rgb), 1);
+    -webkit-box-shadow: 0px 0px 0px 2px rgba(var(--secondary-color-rgb), 1);
+    -moz-box-shadow: 0px 0px 0px 2px rgba(var(--secondary-color-rgb), 1);
+    box-shadow: 0px 0px 0px 2px rgba(var(--secondary-color-rgb), 1);
 }
 
 .form-border input[type=text]:focus,
@@ -336,7 +348,9 @@ a.btn-border.btn-invert,
 .form-border select:focus,
 #quick_search:hover,
 .items_filter .dropdown:hover{
-    box-shadow: 0 0 0 4px rgba(var(--secondary-color-rgb), .3);
+    webkit-box-shadow: 0px 0px 0px 4px rgba(var(--secondary-color-rgb), .3);
+    -moz-box-shadow: 0px 0px 0px 4px rgba(var(--secondary-color-rgb), .3);
+    box-shadow: 0px 0px 0px 4px rgba(var(--secondary-color-rgb), .3);
 }
 
 .container-timeline ul li,

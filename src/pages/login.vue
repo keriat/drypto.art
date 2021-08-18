@@ -2,7 +2,7 @@
   <div class="no-bottom no-top" id="content">
     <div id="top"></div>
 
-    <section class="full-height relative no-top no-bottom vertical-center" data-bgimage="url(/images/background/subheader-dark.jpg) top" data-stellar-background-ratio=".5">
+    <section class="full-height relative no-top no-bottom vertical-center" data-bgimage="url('/images/background/subheader.jpg')" data-stellar-background-ratio=".5">
       <div class="overlay-gradient t50">
         <div class="center-y relative">
           <div class="container">
@@ -14,7 +14,7 @@
               </div>
 
               <div class="col-lg-4 offset-lg-2 wow fadeIn" data-wow-delay=".5s">
-                <div class="box-rounded padding40" data-bgcolor="#21273e">
+                <div class="box-rounded padding40" data-bgcolor="#ffffff">
                   <form name="contactForm" id="contact_form" class="form-border" @submit.prevent="userLogin">
                     <h3 class="form-header">Introduce yourself</h3>
                     <p>
@@ -30,7 +30,7 @@
                     </div>
                     <div class="spacer-single"></div>
                     <div class="field-set">
-                      <input type="submit" id="send_message" value="Submit" class="btn btn-main btn-fullwidth color-2">
+                      <input type="submit" id="send_message" value="Login" class="btn btn-main btn-fullwidth color-2">
                     </div>
 
                     <div class="clearfix"></div>
