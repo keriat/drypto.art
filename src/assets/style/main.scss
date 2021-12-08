@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* 3rd-party libraries */
+
+// Bootstrap v.5.0.2
+
+/* ================================================== */
+
+
+/* import custom fonts */
+@import "./inc/bootstrap.min";
+@import "./inc/bootstrap-grid.min";
+@import "./inc/bootstrap-reboot.min";
+@import "./inc/animate";
+@import "./inc/owl";
+@import "./inc/owl.theme.css";
+@import "./inc/owl.transitions.css";
+@import "./inc/magnific-popup";
+@import "./inc/jquery.countdown";
+@import "./inc/coloring";
+
+
+/* ================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+/* ================================================== */
+
+
+/* import fonts icon */
+
+
+/* ================================================== */
+
+@import "../fonts/font-awesome/css/font-awesome.css";
+@import "../fonts/elegant_font/HTML_CSS/style.css";
+@import "../fonts/et-line-font/style.css";
+@import "../fonts/icofont/icofont.min.css";
+
+* {
+  --body-font: "DM Sans", Helvetica, Arial, sans-serif;
+  --title-font: "DM Sans", Helvetica, Arial, sans-serif;
+}
+
+/* ================================================== */
+
+
+/* general styles */
+
+
+/* ================================================== */
+
+@import "./general";
+@import "./plugins/de-grey";
+@import "./inc/themes/scheme-04";
+@import "./plugins/coloring";

@@ -1,0 +1,176 @@
+{
+  "title": "Drypto | Trustable solution for the galleriests which allows to shape a masterpiece for enternity",
+  "main": "nuxt.config.ts",
+  "types": [
+    "src/types/index.d.ts"
+  ],
+  "files": [
+    "src/types",
+    "src"
+  ],
+  "keywords": [
+    "ethereum",
+    "galleriests",
+    "art",
+    "nfts",
+    "nft service",
+    "nft."
+  ],
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "version": "0.0.1",
+  "homepage": "https://drypto.art",
+  "description": "Drypto | Trustable solution for the galleriests which allows to shape a masterpiece for enternity",
+  "repository": "https://github.com/keriat/drypto.art",
+  "author": "keriat",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/keriat/drypto.art/issues"
+  },
+  "dependencies": {
+    "@dschau/particles.js": "^2.0.0",
+    "@ethersproject/logger": "^5.0.9",
+    "@ethersproject/units": "5.3.0",
+    "@nuxt/http": "latest",
+    "@nuxt/typescript-runtime": "latest",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/google-gtag": "latest",
+    "@nuxtjs/sentry": "latest",
+    "@nuxtjs/toast": "latest",
+    "@popperjs/core": "^2.9.3",
+    "animate.css": "^4.1.1",
+    "bootstrap": "5",
+    "ethereum-blockies-base64": "latest",
+    "ethers": "^5.4.4",
+    "html5shiv": "^3.7.3",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.6.0",
+    "jquery-lazy": "^1.7.11",
+    "lottie-web": "^5.7.8",
+    "magic-sdk": "^4.4.1",
+    "magnific-popup": "^1.1.0",
+    "moment-timezone": "^0.5.33",
+    "nft.storage": "^3.1.3",
+    "nuxt": "latest",
+    "nuxt-build-optimisations": "latest",
+    "nuxt-typed-vuex": "latest",
+    "oh-vue-icons": "^0.4.3",
+    "owl.carousel": "^2.3.4",
+    "typed-vuex": "latest",
+    "vue": "2.*",
+    "vue-class-component": "latest",
+    "vue-qrcode": "latest",
+    "vue-router": "^3.5.1",
+    "vue-scrollto": "^2.20.0",
+    "vuex-persist": "^3.1.3",
+    "web3": "^1.5.1",
+    "web3modal": "^1.9.4",
+    "wow.js": "^1.2.2",
+    "zksync": "latest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.9",
+    "@babel/runtime": "^7.13.10",
+    "@nuxt/types": "latest",
+    "@nuxt/typescript": "latest",
+    "@nuxt/typescript-build": "latest",
+    "@nuxtjs/dotenv": "latest",
+    "@nuxtjs/eslint-config-typescript": "latest",
+    "@nuxtjs/google-fonts": "latest",
+    "@nuxtjs/style-resources": "latest",
+    "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "commitlint": "^11.0.0",
+    "cspell": "latest",
+    "dotenv": "8.2.0",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-prettier-vue": "^2.1.1",
+    "eslint-plugin-vue": "^7.7.0",
+    "fibers": "^5.0.0",
+    "fork-ts-checker-webpack-plugin": "^6.1.0",
+    "jest": "^26.6.3",
+    "node-sass": "4.14.0",
+    "prettier": "^2.2.1",
+    "qrcode": "^1.0.0",
+    "sass": "^1.38.0",
+    "sass-loader": "10",
+    "stylelint": "latest",
+    "stylelint-config-standard": "latest",
+    "stylelint-scss": "latest",
+    "typescript": "^4.2.4",
+    "vue-property-decorator": "latest",
+    "vuex": "^3.6.2",
+    "web3-core": "^1.5.1",
+    "webpack": "^4.46.0"
+  },
+  "peerDependencies": {
+    "@babel/core": "*",
+    "@babel/runtime": "*",
+    "typed-vuex": "*",
+    "vuex": "3.5.1"
+  },
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
+  },
+  "fork-ts-checker": {
+    "typescript": true
+  },
+  "optionalDependencies": {
+    "@sentry/webpack-plugin": "^1.14.0",
+    "fs-extra": "^9.1.0",
+    "fsevents": "^2.3.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-fix",
+      "commit-msg": "commitlint --format -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-fix": [
+    "yarn lint-style:fix",
+    "yarn lint-ts:fix",
+    "yarn format:prettier",
+    "yarn spell-check"
+  ],
+  "scripts": {
+    "local": "sh ./cli-process-env.sh 'rinkeby' 'dev' 1 1",
+    "dev": "yarn local && nuxt",
+    "generate": "nuxt generate ",
+    "start": "yarn local && nuxt start",
+    "build": "yarn local && nuxt build",
+    "ci:build:prod": "yarn ci:prepare:mainnet && yarn generate --fail-on-error",
+    "ci:build:rinkeby": "yarn ci:prepare:rinkeby && yarn generate --fail-on-error",
+    "ci:build:ropsten": "yarn ci:prepare:ropsten && yarn generate --fail-on-error",
+    "ci:prepare:rinkeby": "sh cli-process-env.sh 'rinkeby' prod 1",
+    "ci:prepare:ropsten": "sh cli-process-env.sh 'ropsten' prod 1",
+    "ci:prepare:prod": "sh cli-process-env.sh 'mainnet' prod 1",
+    "format:prettier": "prettier --config .prettierrc.js --ignore-path .prettierignore --write src/**/*.{ts,vue,js}",
+    "lint-ts:check": "eslint --quiet --config \".eslintrc.js\" ./src/**/*.{ts,vue,js}",
+    "lint-ts:fix": "eslint --fix --config \".eslintrc.js\" ./src/**/*.{ts,vue,js}",
+    "lint-style:check": "stylelint --config .stylelintrc --ignore-path .stylelintignore --quiet",
+    "lint-style:fix": "stylelint src/**/*.scss --config '.stylelintrc' --fix -f verbose",
+    "spell-check": "cspell -c .cspell.json src/**/*.{ts,vue,js} *.md"
+  },
+  "packageManager": "yarn@3.1.1"
+}
