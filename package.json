@@ -171,5 +171,6 @@
     "lint-style:check": "stylelint --config .stylelintrc --ignore-path .stylelintignore --quiet",
     "lint-style:fix": "stylelint src/**/*.scss --config '.stylelintrc' --fix -f verbose",
     "spell-check": "cspell -c .cspell.json src/**/*.{ts,vue,js} *.md"
-  }
+  },
+  "packageManager": "yarn@3.1.1"
 }
