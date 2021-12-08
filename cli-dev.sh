@@ -4,8 +4,8 @@ CATEGORY="$1"
 
 ACTION="$2"
 
-if [[ $CATEGORY == "clean" ]]; then
-  if [[ $ACTION == "yarn" ]]; then
+if [ "$CATEGORY" = "clean" ]; then
+  if [ "$ACTION" = "yarn" ]; then
     echo "Yarn garbage collection started"
     echo ""
     echo "  - dropping node_modules folder..."
@@ -18,7 +18,7 @@ if [[ $CATEGORY == "clean" ]]; then
     yarn cache clean --all
     printf "  Done\n\n"
     echo "All done!"
-  elif [[ $ACTION == "nuxt" ]]; then
+  elif [ "$ACTION" = "nuxt" ]; then
     echo "Nuxtjs garbage collection started"
     echo ""
     echo "  - dropping .nuxt folder..."
@@ -31,15 +31,15 @@ if [[ $CATEGORY == "clean" ]]; then
   fi
 fi
 
-if [ $CATEGORY == "ci" ]; then
-    echo "Yarn pre-deploy garbage collection started"
-    echo ""
-    bash cli-dev.sh clean nuxt
-    echo ""
-    echo ""
-    bash cli-dev.sh clean yarn
-    echo ""
-    echo "Running yarn install (without modifying yarn.lock)"
-    yarn install --check-cache
-    echo "Done"
+if [ "$CATEGORY" = "ci" ]; then
+  echo "Yarn pre-deploy garbage collection started"
+  echo ""
+  bash cli-dev.sh clean nuxt
+  echo ""
+  echo ""
+  bash cli-dev.sh clean yarn
+  echo ""
+  echo "Running yarn install (without modifying yarn.lock)"
+  yarn install --check-cache
+  echo "Done"
 fi

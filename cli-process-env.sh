@@ -12,10 +12,6 @@ Green="\033[0;32m"   # Green
 Blue="\033[0;34m"    # Blue
 BBlue="\033[1;34m"   # Bold Blue
 
-if [ -z $NETWORK ]; then
-  NETWORK="rinkeby"
-fi
-
 if [ -z $ENV_VALUE ]; then
   ENV_VALUE="dev"
 fi
@@ -25,13 +21,11 @@ FILE=".env"
 printf "\n${BBlue}Configuration:\n\n" "" "$NC"
 
 printf "${Default}   Environment:"
-if [ "$ENV_VALUE" == "prod" ]; then
+if [ "$ENV_VALUE" = "prod" ]; then
   echo "${Red} dev"
 else
   echo "${Green} $ENV_VALUE"
 fi
-
-echo "${Default}   Ethereum network: ${Green}$NETWORK"
 
 printf "${Default}   Localhost:"
 
@@ -56,7 +50,7 @@ printf "${Default}   File status: "
 if [ -e $FILE ]; then
   echo "${Green}.env found"
 else
-  echo "${Default}   Configuring .env for $NETWORK ethereum network"
+  echo "${Default}   Configuring .env for $ENV_VALUE build"
   FORCE_REWRITE=1
 fi
 
@@ -76,7 +70,7 @@ GIT_UPDATED_AT="APP_GIT_UPDATED_AT=\"$(git log -1 --format=%cd)\""
 APP_ENV="APP_ENV=$ENV_VALUE"
 
 rm -f ./.env &&
-  cp "environments/.env.$NETWORK" ".env" &&
+  cp ".env.example" ".env" &&
   echo "$GIT_VERSION" >>".env" &&
   echo "$GIT_REVISION" >>".env" &&
   echo "$APP_ENV" >>".env" &&
